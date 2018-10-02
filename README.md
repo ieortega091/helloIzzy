@@ -5,7 +5,7 @@
 
 ### App Walk-though
 
-<img src="https://github.com/ieortega091/helloIzzy/blob/master/APK%20submission.gif" width=200><br>
+<img src="https://github.com/ieortega091/helloIzzy/blob/78f84ac2a99d6288f7e4cc3d7164dcb0b1d21a52/APK%20submission.gif" width=200><br>
 
 
 
