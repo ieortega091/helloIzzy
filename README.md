@@ -1,56 +1,25 @@
-package com.izzy.hello.helloizzy;
+## Hello Izzy
 
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+### App Description
+`TODO://` Simple app that changes font string and color with buttons.
 
-public class MainActivity extends AppCompatActivity {
-    private RelativeLayout mRelativeLayout;
-    private Button mButtton;
-    private TextView mTextView;
+### App Walk-though
+
+<img src="https://github.com/ieortega091/helloIzzy/blob/master/APK%20submission.gif" width=200><br>
 
 
 
+### Required User Stories
+- [X] 1. User sees custom text in a label - Hello from {name}!
+- [X] 2. User see's custom background color.
+- [X] 3. User can tap a button to change the text color of the label.
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
-        findViewById(R.id.buttonColor).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((TextView) findViewById(R.id.textView)).setTextColor(getResources().getColor(R.color.colorAccent));
-            }
-        });
-
-
-
-
-
-        mButtton = (Button)findViewById(R.id.button);
-        mRelativeLayout = (RelativeLayout)findViewById(R.id.relativeLayout);
-        mTextView = (TextView)findViewById(R.id.textView);
-
-        View.OnClickListener listener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String replace = "Android is Awsome";
-
-
-                mTextView.setText(replace);
-            }
-        };
-
-        mButtton.setOnClickListener(listener);
-    }
-
-
-}
+### Optional User Stories
+- [ ] 1. User can tap a button to change the color of the background view.
+- [X] 2. User can tap a button to change the text string of the label - Goodbye 👋.
+- [ ] 3. User can tap on the background view to reset all views to default settings.
+- [ ] 4. User can update the label text with custom text entered into the text field.
+   - [ ] a. User can enter text into a text field using the keyboard.
+   - [ ] b. User can tap the "Change text string" button to update the label with the text from the text field.
+   - [ ] c. If the text field is empty, update label with default text string.
+   - [ ] d. The keyboard is dismissed after the button has been tapped.
